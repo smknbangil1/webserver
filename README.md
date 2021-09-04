@@ -16,8 +16,8 @@ network:
   ethernets:
     ens18:
       addresses:
-      - 10.10.10.10/24
-      gateway4: 10.10.10.1
+      - 10.10.30.2/24
+      gateway4: 10.10.30.1
       nameservers:
         addresses:
         - 8.8.4.4
@@ -45,7 +45,7 @@ systemctl restart nginx.service
 systemctl enable nginx.service
 ```
 
-#### buka http://ipserver
+#### buka IP Public di browser, contohnya http://203.210.87.84
 
 ### install package/software PHP-FPM
 ```bash
