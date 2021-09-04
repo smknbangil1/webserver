@@ -103,3 +103,5 @@ coba masukkan password yg tadi udah dibuat, pastikan bisa muncul:
 ```bash
 MariaDB [(none)]>
 ```
+ketik exit untuk keluar dari promp mariadb, sampai disini proses install web server, php, dabatase sudah berjalan baik...
+#### Selanjutnya: meng-install Moodle
