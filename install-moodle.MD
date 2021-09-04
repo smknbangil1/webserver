@@ -19,7 +19,30 @@ simpan
 ```bash
 systemctl restart php7.4-fpm.service
 ```
-### Next... membuat file database untuk moodle
+### Next... konfigurasi database server
+```bash
+/etc/mysql/mariadb.conf.d/50-server.cnf
+```
+cek/tambahkan pengaturan ini jika blm ada di default konfig
+```bash
+[mysqld]
+#
+* Basic Settings
+#
+user = mysql
+pid-file = /run/mysqld/mysqld.pid
+socket = /run/mysqld/mysqld.sock
+#port = 3306
+basedir = /usr
+datadir = /var/lib/mysql
+tmpdir = /tmp
+lc-messages-dir = /usr/share/mysql
+#skip-external-locking
+innodb_file_format = Barracuda
+innodb_file_per_table = 1
+innodb_large_prefix = ON
+```
+### membuat file database untuk moodle
 ```bash
 mysql
 ```
