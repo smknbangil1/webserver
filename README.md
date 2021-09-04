@@ -70,7 +70,9 @@ systemctl restart php7.4-fpm.service
 ```bash
 apt-get install poppler-utils python3.8 graphviz aspell ghostscript clamav -y
 ```
-
+```bash
+apt-get install git curl -y
+```
 ### install package/software database
 ```bash
 apt-get install mariadb-server mariadb-client -y
