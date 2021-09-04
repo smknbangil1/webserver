@@ -55,7 +55,7 @@ apt-get install php7.4-fpm -y
 #### cek php apakah sudah terinstall dengan baik, dibuktikan bisa restart service php-nya
 ```bash
 systemctl restart php7.4-fpm.service
-systemctl enable nginx.service
+systemctl enable php7.4-fpm.service
 ```
 
 ### install php-extension
@@ -75,4 +75,30 @@ apt-get install poppler-utils python3.8 graphviz aspell ghostscript clamav -y
 ```bash
 apt-get install mariadb-server mariadb-client -y
 ```
+#### cek php apakah sudah terinstall dengan baik, dibuktikan bisa restart service mariaDB-nya
+```bash
+systemctl restart mariadb.service
+systemctl enable mariadb.service
+```
 
+#### membuat password root/administrator database
+```
+mysql_secure_installation
+```
+    Enter current password for root (enter for none): silakan tekan Enter
+    Set root password? [Y/n]: tekan Y
+    New password: masukkan password
+    Re-enter new password: Repeat password
+    Remove anonymous users? [Y/n]: tekan Y
+    Disallow root login remotely? [Y/n]: tekan Y
+    Remove test database and access to it? [Y/n]:  tekan Y
+    Reload privilege tables now? [Y/n]:  tekan Y
+```
+#### menguji password root database
+```
+mysql -u root -p
+```
+coba masukkan password yg tadi udah dibuat, pastikan bisa muncul:
+```
+MariaDB [(none)]>
+```
