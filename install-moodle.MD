@@ -106,3 +106,5 @@ restart nginx
 ```bash
 systemctl restart nginx.service
 ```
+#### bukalah web moodle dengan sesuai nama domain
+# -
