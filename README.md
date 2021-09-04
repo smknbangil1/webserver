@@ -84,6 +84,7 @@ systemctl enable mariadb.service
 #### membuat password root/administrator database
 ```
 mysql_secure_installation
+```
 ```bash
     Enter current password for root (enter for none): silakan tekan Enter
     Set root password? [Y/n]: tekan Y
