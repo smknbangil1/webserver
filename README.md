@@ -2,7 +2,7 @@
 
 ## periksa seluruh interface NIC
 ```bash
-ifconfig -a
+ip a
 ```
 
 ## konfig LAN
