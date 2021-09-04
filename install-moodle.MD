@@ -26,8 +26,8 @@ mysql
 ```bash
 CREATE DATABASE moodledb;
 ```
-```bash
 #### membuat user database
+```bash
 CREATE USER 'samson'@'localhost' IDENTIFIED BY 'myDBpassword';
 ```
 contoh diatas saya buat user database dgn nama somson, anda bisa ganti dengan username lainnya sesuai selera anda :)
@@ -42,15 +42,38 @@ FLUSH PRIVILEGES;
 ```bash
 EXIT;
 ```
+### Download aplikasi moodle dari terminal
+masuk ke folder tempat script moodle akan disimpan
+```bash
+cd /var/www
+```
+```bash
+git clone -b MOODLE_39_STABLE git://git.moodle.org/moodle.git moodle
+```
+mengatur permission nginx
+```bash
+chown -R www-data:www-data /var/www/moodle
+chmod -R 755 /var/www/moodle
+```
+membuat folder asset/moodledata
+```bash
+mkdir -p /var/www/moodledata
+chown www-data:www-data /var/www/moodledata
+chmod -R 777 /var/www/moodledata
+```
 
-config vhost untuk domain atau sub domain
+### Konfigurasi vhost untuk domain atau sub domain
+```bash
+nano /etc/nginx/sites-available/namadomain.co.id
+```
+gantilah namadomain.co.id dengan sub/domain anda yang sesuai
 ```bash
 server {
     listen 80;
     listen [::]:80;
     root /var/www/moodle;
     index  index.php index.html index.htm;
-    server_name  example.com;
+    server_name  namadomain.co.id;
 
     client_max_body_size 100M;
     autoindex off;
@@ -70,4 +93,16 @@ server {
         include fastcgi_params;
     }
 }
+```
+lalu save dan exit
+```bash
+ln -s /etc/nginx/sites-available/namadomain.co.id /etc/nginx/sites-enabled/
+```
+cek konfigurasi vhost dengan :
+```bash
+nginx -t
+```
+restart nginx
+```bash
+systemctl restart nginx.service
 ```
