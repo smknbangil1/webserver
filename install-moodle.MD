@@ -3,7 +3,7 @@
 ```baah
 nano /etc/php/7.4/fpm/php.ini
 ```
-caria opsi ini tiap baris, dan buat seperti berikut:
+cari opsi ini tiap baris, dan buat seperti berikut:
 ```bash
 file_uploads = On
 allow_url_fopen = On
