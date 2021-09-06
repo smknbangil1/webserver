@@ -21,7 +21,7 @@ systemctl restart php7.4-fpm.service
 ```
 ### Next... konfigurasi database server
 ```bash
-/etc/mysql/mariadb.conf.d/50-server.cnf
+nano /etc/mysql/mariadb.conf.d/50-server.cnf
 ```
 cek/tambahkan pengaturan ini jika blm ada di default konfig
 ```bash
