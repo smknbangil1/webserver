@@ -42,6 +42,10 @@ innodb_file_format = Barracuda
 innodb_file_per_table = 1
 innodb_large_prefix = ON
 ```
+save and exit, kemudian restart mariadb
+```bash
+systemctl restart mariadb.service
+```
 ### membuat file database untuk moodle
 ```bash
 mysql
