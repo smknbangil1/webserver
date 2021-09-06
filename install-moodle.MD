@@ -57,7 +57,7 @@ CREATE DATABASE moodledb;
 ```bash
 CREATE USER 'samson'@'localhost' IDENTIFIED BY 'myDBpassword';
 ```
-contoh diatas saya buat user database dgn nama somson, anda bisa ganti dengan username lainnya sesuai selera anda :)
+contoh diatas saya buat user database dgn nama samson, anda bisa ganti dengan username lainnya sesuai selera anda :)
 #### memberi hak akses samson terhadap file moodledb
 ```bash
 GRANT ALL ON moodledb.* TO 'samson'@'localhost' WITH GRANT OPTION;
