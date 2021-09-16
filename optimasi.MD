@@ -108,7 +108,7 @@ kemudian lanjutkan dgn optimasi database server `mariadb`
 ```bash
 nano /etc/mysql/mariadb.conf.d/50-server.cnf
 ```
-pada bagian `[mysqld]` dibawahnya finetunning carilah max_connections dan ubah value menjadi 500 
+pada bagian `[mysqld]` dibawahnya finetunning carilah `max_connections` dan ubah value menjadi 500 
 dan juga tambahkan baris dibawah ini dibawahnya `innodb_large_prefix = ON`
 ```bash
 innodb_buffer_pool_size	= 1024M
