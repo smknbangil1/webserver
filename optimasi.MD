@@ -114,3 +114,4 @@ dan juga tambahkan baris dibawah ini dibawahnya `innodb_large_prefix = ON`
 innodb_buffer_pool_size	= 1024M
 innodb_log_buffer_size	= 256M
 ```
+selanjutnya restart database server `systemctl restart mariadb.service`
