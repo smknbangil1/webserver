@@ -2,6 +2,7 @@
 ```bash
 nano /etc/nginx/nginx.conf
 ```
+ini tidak perlu menambah baris, tetapi cukup dengan meyamakan script seperti dibawah ini:
 ```bash
 user www-data;
 worker_processes auto;
@@ -9,7 +10,7 @@ pid /run/nginx.pid;
 include /etc/nginx/modules-enabled/*.conf;
 
 events {
-	worker_connections 768;
+	worker_connections 7680;
 	multi_accept on;
 }
 
