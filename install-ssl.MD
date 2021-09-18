@@ -26,3 +26,8 @@ kalau ada persetujuan Term of Service jawab dengan A (agree), atau Y(yes), dah i
 #
 kalau ada kesulitan bisa chat ke wa dan screenshot ya mas :)
 Selesai. Terima kasih
+
+artikel lain yg bisa dijadikan referensi : 
+```bash
+https://www.domainesia.com/panduan/cara-install-lets-encrypt-di-vps/
+```
