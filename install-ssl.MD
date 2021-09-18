@@ -1,6 +1,6 @@
 ### cara install SSL Lets Encript di server ubuntu
-masuk sebagai root dengan cara `sudo su` kemudian masukin passwordnya
-selanjutnya ketik :
+masuk sebagai root dengan cara `sudo su` kemudian masukin passwordnya, 
+kemudian ketik command dibawah ini:
 ```bash 
 apt-get update -y
 ```
