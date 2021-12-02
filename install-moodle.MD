@@ -85,7 +85,7 @@ chmod -R 755 /var/www/moodle
 membuat folder asset/moodledata
 ```bash
 mkdir -p /var/www/moodledata
-chown www-data:www-data /var/www/moodledata
+chown -R www-data:www-data /var/www/moodledata
 chmod -R 777 /var/www/moodledata
 ```
 
