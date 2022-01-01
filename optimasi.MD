@@ -100,7 +100,7 @@ security.limit_extensions = .php
 ```
 Selanjutnya restart php-fpm:
 ```bash
-systemctl restart php-fpm.service
+systemctl restart php7.4-fpm.service
 ```
 kemudian lanjutkan dgn optimasi database server `mariadb`
 
