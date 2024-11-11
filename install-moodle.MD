@@ -10,6 +10,7 @@ allow_url_fopen = On
 short_open_tag = On
 memory_limit = 256M
 cgi.fix_pathinfo = 0
+post_max_size = 100M
 upload_max_filesize = 100M
 max_execution_time = 360
 date.timezone = Asia/Jakarta
